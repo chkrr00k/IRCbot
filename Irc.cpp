@@ -47,7 +47,5 @@ std::string Irc::read() {
 	return this->server.read();
 }
 
-
-
-Irc::~Irc(){
+Irc::~Irc() {
 }

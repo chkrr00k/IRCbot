@@ -1,12 +1,15 @@
 #pragma once
 #include <string>
 #include "Server.h"
+#include "Channel.h"
+#include "Map.h"
 #include <stdlib.h>
 
 class Irc{
 private:
 	Server server;
 	std::string nick;
+	Map<std::string, Channel> chans;
 public:
 	Irc(std::string server, int port, std::string nick);
 	void connect();
